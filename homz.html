@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crestalat Resin Art</title>
+
+  <!-- خطوط مزخرفة -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f1e6e8;
+      color: #3b2b2f;
+      overflow-x: hidden;
+    }
+
+    /* الخلفية الرئيسية */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('logo.jpg') no-repeat right center;
+      background-size: cover;
+      background-position: right center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* شريط الروابط */
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #3b2b2f;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #e5d1d6;
+    }
+
+    /* اسم المتجر */
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: #3b2b2f;
+      text-align: center;
+      font-style: italic;
+      margin-top: 100px;
+      animation: slideIn 2s ease-out;
+    }
+
+    /* الجملة التعريفية */
+    .intro {
+      text-align: center;
+      font-size: 18px;
+      color: #6e5b5f;
+      margin: 10px auto 40px;
+      max-width: 90%;
+    }
+
+    /* خيارات المنتجات */
+    .product-options {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px 40px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .product-box {
+      background-color: #e3ccd2;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-box:hover {
+      background-color: #d6b7c0;
+      transform: scale(1.02);
+    }
+
+    .product-box h2 {
+      margin: 0;
+      font-size: 22px;
+      color: #3b2b2f;
+    }
+
+    /* حركات */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* للجوال */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 36px;
+        margin-top: 60px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        background-position: center center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">تواصل معنا</a>
+    </nav>
+
+    <div class="hero-title">CRESTALAT</div>
+    <p class="intro">فن الريزين المُصمم ليخلّد ذكرياتك ويحولها لقطع فنية خالدة</p>
+  </section>
+
+  <main>
+    <section class="product-options">
+      <div class="product-box" onclick="alert('عرض المنتجات الجاهزة')">
+        <h2>منتجات جاهزة</h2>
+      </div>
+      <div class="product-box" onclick="alert('عرض الطلبات المخصصة')">
+        <h2>طلبات مخصصة</h2>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
