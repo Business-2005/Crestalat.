@@ -1,0 +1,66 @@
+/* استيراد الخط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f1e6e8; /* لون الخلفية المأخوذ من اللوغو */
+  color: #3b2b2f; /* لون نص غامق مشابه للوغو */
+}
+
+header {
+  background-color: #f1e6e8;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  max-width: 90%;
+  border-radius: 12px;
+}
+
+.intro {
+  text-align: center;
+  margin: 30px 20px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #6e5b5f;
+}
+
+.product-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.product-box {
+  background-color: #e3ccd2;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-box:hover {
+  background-color: #d6b7c0;
+  transform: scale(1.02);
+}
+
+.product-box h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #3b2b2f;
+}
