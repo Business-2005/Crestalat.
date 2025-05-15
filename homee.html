@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>CresTalat - Resin Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- خط فاخر واضح -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f3e6e9;
+      color: #3a2c2c;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body::before {
+      content: "";
+      background: url('logo.jpeg') no-repeat center center;
+      background-size: 500px;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    header {
+      padding: 30px 15px 15px;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      color: #703b3f;
+    }
+
+    .intro {
+      font-size: 1.1em;
+      color: #5c4a4a;
+      margin-top: 10px;
+    }
+
+    .product-section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      flex-grow: 1;
+    }
+
+    .product-box {
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      width: 280px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .product-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .product-box h2 {
+      color: #9b5a5a;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    .product-box p {
+      font-size: 1em;
+      color: #6b5050;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #6b5050;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CresTalat</h1>
+    <p class="intro">Craft timeless pieces from your memories with resin and bouquets</p>
+  </header>
+
+  <section class="product-section">
+    <div class="product-box" onclick="alert('عرض المنتجات الجاهزة قريباً')">
+      <h2>منتجات جاهزة</h2>
+      <p>قطع فنية جاهزة، مصممة بذوق رفيع ولمسة إبداعية.</p>
+    </div>
+
+    <div class="product-box" onclick="alert('عرض المنتجات المخصصة قريباً')">
+      <h2>منتجات مخصصة</h2>
+      <p>اختَر تصميمك، واصنع معنا قطعة تحمل ذكرياتك.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CresTalat - جميع الحقوق محفوظة | بإبداع يدوي 
+  </footer>
+
+</body>
+</html>
