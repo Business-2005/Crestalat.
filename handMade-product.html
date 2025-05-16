@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>CresTalat - منتجاتنا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f3e6e9;
+      color: #3a2c2c;
+    }
+
+    header {
+      padding: 30px 15px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2em;
+      color: #703b3f;
+    }
+
+    .nav-links {
+      margin: 10px 0;
+    }
+
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1em;
+      color: #703b3f;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #9b5a5a;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+  /*  .product-card h3 {
+      margin: 10px 5px 5px;
+      font-size: 1em;
+      color: #9b5a5a;
+    }*/
+    .product-card h3 {
+  margin: 8px 5px;
+  font-size: 0.8em;
+  color: #9b5a5a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+    .product-card p {
+      font-size: 0.9em;
+      color: #6b5050;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #6b5050;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CresTalat</h1>
+  <nav class="nav-links">
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="#">تواصل معنا</a>
+  </nav>
+</header>
+
+<section class="products-grid">
+  <div class="product-card">
+    <img src="port14.jpg" alt="Resin Product 1">
+    <h3> Round Resin Keychain</h3>
+  </div>
+
+  <div class="product-card">
+    <img src="t3lietBebKbire.jpg" alt="Resin Product 2">
+    <h3>Resin Letter Door Sign</h3>
+  </div>
+
+  <div class="product-card">
+    <img src="harf1.jpg" alt="Resin Product 3">
+    <h3>Mini Resin Letter Keychain</h3>
+  </div>
+
+  <!-- أضف المزيد من المنتجات حسب الحاجة -->
+
+</section>
+
+<footer>
+  &copy; 2025 CresTalat - جميع الحقوق محفوظة | إبداع يدوي
+</footer>
+
+</body>
+</html>
