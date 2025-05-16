@@ -23,6 +23,24 @@
   display: block;
 }
 
+.nav-links {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #9b5a5a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #703b3f;
+}
+
 
     * {
       box-sizing: border-box;
@@ -130,12 +148,18 @@
  <header>
   <h1>CresTalat</h1>
 
+  <!-- روابط التنقل -->
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
   <!-- الشعار -->
   <div class="logo-container">
     <img src="logo.jpg" alt="CresTalat Logo">
   </div>
 
-  <p class="intro">Craft Timeless Pieces From Your Memories With Resin And Bouquets</p>
+  <p class="intro">Craft timeless pieces from your memories with resin and bouquets</p>
 </header>
 
 
