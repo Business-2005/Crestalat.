@@ -6,8 +6,20 @@
   <title>CresTalat - Resin Art</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- خط فاخر واضح -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cairo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    .logo-container {
+  margin: 15px auto;
+  max-width: 220px;
+}
+
+.logo-container img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -40,16 +52,18 @@
     }
 
     header h1 {
-      font-family: 'Playfair Display', serif;
+     /* font-family: 'Playfair Display', serif;*/
+      font-family: 'Great Vibes', cursive;
       font-size: 3.5em;
       color: #703b3f;
     }
 
     .intro {
-      font-size: 1.1em;
-      color: #5c4a4a;
-      margin-top: 10px;
-    }
+        font-size: 0.9em; /* تم تقليله من 1.1em */
+        color: #5c4a4a;
+        margin-top: 10px;
+      }
+
 
     .product-section {
       display: flex;
@@ -109,10 +123,17 @@
 </head>
 <body>
 
-  <header>
-    <h1>CresTalat</h1>
-    <p class="intro">Craft timeless pieces from your memories with resin and bouquets</p>
-  </header>
+ <header>
+  <h1>CresTalat</h1>
+
+  <!-- الشعار -->
+  <div class="logo-container">
+    <img src="logo.jpg" alt="CresTalat Logo">
+  </div>
+
+  <p class="intro">Craft Timeless Pieces From Your Memories With Resin And Bouquets</p>
+</header>
+
 
   <section class="product-section">
     <div class="product-box" onclick="alert('عرض المنتجات الجاهزة قريباً')">
