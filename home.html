@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>CresTalat - Resin Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .logo-container {
+  margin: 15px auto;
+  max-width: 220px;
+}
+
+.logo-container img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d8bfc5; 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
+.nav-links {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #703b3f;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+ 
+   color: #9b5a5a;
+}
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f3e6e9;
+      color: #3a2c2c;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body::before {
+      content: "";
+      background: url('logo.jpeg') no-repeat center center;
+      background-size: 500px;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    header {
+      padding: 30px 15px 15px;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    header h1 {
+     /*font-family: 'Playfair Display', serif;*/
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
+      color: #703b3f;
+    }
+
+    .intro {
+        font-size: 1.1em; /* تم تقليله من 1.1em */
+        color: #5c4a4a;
+        margin-top: 10px;
+      }
+
+
+    /*.product-section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      flex-grow: 1;
+    }*/
+    .product-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+   /* .product-box {
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      width: 280px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }*/
+    .product-box {
+  background-color: #e3ccd2;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+    .product-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .product-box h2 {
+       display: flex;
+      justify-content: center;
+      color: #9b5a5a;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      
+    }
+
+    .product-box p {
+       display: flex;
+      justify-content: center;
+      font-size: 1em;
+      color: #6b5050;
+      
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #6b5050;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  <h1>CresTalat</h1>
+
+  <!-- روابط التنقل -->
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <!-- الشعار -->
+  <div class="logo-container">
+    <img src="logo.jpg" alt="CresTalat Logo">
+  </div>
+
+  <p class="intro">Craft Timeless Pieces From Your Memories With Resin And Bouquets</p>
+</header>
+
+
+  <section class="product-section">
+    <div class="product-box" onclick="alert('عرض المنتجات الجاهزة قريباً')">
+      <h2>HandMade Resin Work</h2>
+      <p>Some cute things i did</p>
+    </div>
+
+    <div class="product-box" onclick="alert('عرض المنتجات المخصصة قريباً')">
+      <h2>Resin Products</h2>
+      <p>Some products to make your own works with the resin</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CresTalat - جميع الحقوق محفوظة | إبداع يدوي 
+  </footer>
+
+</body>
+</html>
